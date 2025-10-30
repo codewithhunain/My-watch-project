@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'poppins' , sans-serif;
+    height: 1.6;
+    background:#f8fafc ;
+    color:  #1f2937;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.logo {
+     font-weight: 700;
+    font-size: 1.4rem;
+}
+.logo span {
+    color: #2563eb;
+}
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color:  #1f2937;
+    font-weight: 500;
+}
+.nav a:hover {
+    color: #2563eb;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #f0f4ff, #e8f1ff);
+}
+.hero-text {
+    flex: 1;
+    padding-right:20px ;
+}
+.hero-text h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+}
+.hero-text p {
+     margin-bottom: 20px;
+  color: #374151;
+}
+.btn {
+    background-color:  #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.hero-image {
+    flex: 1;
+    align-items: center;
+}
+.hero-image img {
+    width: 320px;
+    max-width: 100%;
+}
+.features {
+    text-align: center;
+    padding: 80px 8%;
+    background-color: #fff;
+}
+.features h2 {
+      font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+.feaature-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feature {
+      background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.feature:hover {
+    transform: translateY(-8px);
+}
+.hed {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+}
+.feature img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+.feature h3 {
+      color: #2563eb;
+  margin-bottom: 8px;
+}
+.footer {
+    text-align: center;
+    background: #111827;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+@media (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+    text-align: center;
+    }
+      .hero-text { padding: 0; }
+  .hero-image { margin-top: 20px; }
+
+}
